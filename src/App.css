@@ -30,6 +30,7 @@
 }
 
 .RoutesLinks{
+  /*TODO Change tp my theme colors*/
   background-image: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #ffffff, #00fff2, #fd87ff, #ffffff, #ffffff, #ffffff, #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
