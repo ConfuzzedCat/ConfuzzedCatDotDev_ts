@@ -1,0 +1,34 @@
+#root {
+  margin: 0 auto;
+  /*
+  padding: 2rem;
+  */
+}
+.Title{
+  margin-bottom: 10em;
+  font-size: 1vw;
+  line-height: 1;
+  text-align: left;
+  max-width: 10000px;
+}
+
+.TextCenter{
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'JetBrainMono';
+  src: local('JetBrainMono'), url(.\assets\fonts\JetBrainsMonoNerdFont-Regular.ttf) format('truetype');
+}
+
+.JetBrainMono{
+  font-family: "JetBrainMono";
+}
+
+.TextContent{
+  font-size: 2vw;
+}
+
+.RoutesLinks{
+  /*TODO Make a gradient appear when hovering over a text*/
+}
