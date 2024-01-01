@@ -1,6 +1,6 @@
 function TitleAsciiArt() {
     return(
-        <pre className="Title">
+        <pre className="Title RouteLinks">
         ‍     ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___     <br/>
         ‍    /\  \         /\  \         /\__\         /\  \         /\__\         /\  \         /\  \         /\  \         /\  \         /\  \         /\  \         /\  \    <br/>
         ‍   /::\  \       /::\  \       /::|  |       /::\  \       /:/  /         \:\  \        \:\  \       /::\  \       /::\  \       /::\  \       /::\  \        \:\  \   <br/>

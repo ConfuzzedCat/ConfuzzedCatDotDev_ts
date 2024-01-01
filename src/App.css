@@ -17,8 +17,8 @@
 }
 
 @font-face {
-  font-family: 'JetBrainMono';
-  src: local('JetBrainMono'), url(.\assets\fonts\JetBrainsMonoNerdFont-Regular.ttf) format('truetype');
+  font-family: "JetBrainMono";
+  src: local("JetBrainMono"), url(.\assets\fonts\JetBrainsMonoNerdFont-Regular.ttf) format("truetype");
 }
 
 .JetBrainMono{
@@ -30,5 +30,23 @@
 }
 
 .RoutesLinks{
-  /*TODO Make a gradient appear when hovering over a text*/
+  background-image: linear-gradient(to right, #ffffff, #ffffff, #ffffff, #ffffff, #00fff2, #fd87ff, #ffffff, #ffffff, #ffffff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  background-position: 0%;
+}
+.RoutesLinks:hover{
+  animation: animatedgradienttext 1s;
+  cursor: pointer;
+}
+
+@keyframes animatedgradienttext {
+  from{
+    background-position: 0%;
+  }
+  to{
+    background-position: 100%;
+  }
 }

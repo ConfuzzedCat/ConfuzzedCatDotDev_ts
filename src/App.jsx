@@ -13,9 +13,9 @@ function App() {
         <h2>
           Welcome
         </h2>
-          <span className='RoutesLinks'>About me</span>
+          <span className="RoutesLinks">About me</span>
           <Spacer/>
-          <span>Github</span>
+          <span className="RoutesLinks">Links</span>
           
       </div>
     </>
