@@ -1,6 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 function TitleAsciiArt() {
-    return(
-        <pre className="Title RouteLinks">
+  const navigate = useNavigate();
+  const ClickHandler = () => {
+    navigate("/");
+  };
+  return(
+    <div className="Title RoutesLinks" onClick={ClickHandler}>
+      <pre>
         ‍     ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___           ___     <br/>
         ‍    /\  \         /\  \         /\__\         /\  \         /\__\         /\  \         /\  \         /\  \         /\  \         /\  \         /\  \         /\  \    <br/>
         ‍   /::\  \       /::\  \       /::|  |       /::\  \       /:/  /         \:\  \        \:\  \       /::\  \       /::\  \       /::\  \       /::\  \        \:\  \   <br/>
@@ -16,8 +23,9 @@ function TitleAsciiArt() {
           // Font: Isometric1 - https://patorjk.com/software/taag/#p=display&h=0&v=0&c=c%2B%2B&f=Isometric1&t=ConfuzzedCat%0A 
           // Zero width joiner used to fix spacing.
         }
-            </pre>
-    );
+      </pre>
+    </div>
+  );
 }
 
 export default TitleAsciiArt;
