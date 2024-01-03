@@ -17,12 +17,12 @@
 }
 
 @font-face {
-  font-family: "JetBrainMono";
-  src: local("JetBrainMono"), url(.\assets\fonts\JetBrainsMonoNerdFont-Regular.ttf) format("truetype");
+  font-family: "JetBrainsMono";
+  src: local("JetBrainsMono"), url(.\assets\fonts\JetBrainsMonoNerdFont-Regular.ttf) format("truetype");
 }
 
 .JetBrainMono{
-  font-family: "JetBrainMono";
+  font-family: "JetBrainsMono";
 }
 
 .TextContent{
@@ -30,7 +30,6 @@
 }
 
 .RoutesLinks{
-  /*TODO Change tp my theme colors*/
   background-image: 
     linear-gradient(
       to right, 
@@ -38,8 +37,8 @@
         #ffffff, 
         #ffffff, 
         #ffffff, 
-        #00fff2, 
-        #fd87ff, 
+        #00fafa, 
+        #fa8edd, 
         #ffffff, 
         #ffffff, 
         #ffffff, 
@@ -92,12 +91,10 @@ a:hover:after {
 }
 
 .Footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  margin-top: auto;
+  background-color: var(--bg-color);
   width: 100%;
   color: white;
-  background-color: var(--bg-color);
 }
 
 .PageNotFoundText{
@@ -125,4 +122,10 @@ a:hover:after {
 .OneCharSpacer{
   margin-left: 1ch;
   margin-right: 1ch;
+}
+
+.MainLayout{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

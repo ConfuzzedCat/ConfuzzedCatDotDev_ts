@@ -4,16 +4,16 @@ import MainLayout from './layouts/MainLayout';
 import HomePage from './pages/Home';
 import PageNotFound from './pages/PageNotFound';
 import PGPKey from './pages/PGPKey';
+import About from './pages/About';
+
 function App() {
-  const possibleRoutes = ["/about", "/links", "/pgp"];
+  const possibleRoutes = ["/about", "/pgp"];
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <>
-        <Route path="/" element={<MainLayout />}>
-          <Route index element={<HomePage />} />
-          {
-            //<Route path='pets' element={<ViewPets isAdmin={isAdmin} />}/>
-          }
+        <Route path="/" element={<MainLayout/>}>
+          <Route index element={<HomePage/>}/>
+          <Route path="about" element={<About/>}/>
           <Route path="pgp" element={<PGPKey/>}/>
           <Route path="*" element={<PageNotFound possibleRoutes={possibleRoutes}/>} /> 
         </Route>

@@ -4,11 +4,11 @@ import Footer from '../components/Footer';
 
 function MainLayout() {
     return (
-        <>
+        <div className="MainLayout">
             <TitleAsciiArt/>
             <Outlet/>
             <Footer/>
-        </>
+        </div>
     );
 }
 

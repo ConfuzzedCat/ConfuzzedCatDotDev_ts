@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useLocation } from "react-router-dom";
 import InlineLink from "../components/InlineLink";
 
@@ -23,18 +24,26 @@ function PageNotFound({possibleRoutes}) {
         }
         return arr[t.length][s.length];
     };
+    let skipCal = false;
     let closestPage;
-    let possiblePages = [];
-    possibleRoutes.forEach(r => {
-        possiblePages.push({"dis": levenshteinDistance(r, loc.pathname), "path": r});
-    });
-    console.log(possiblePages);
-    possiblePages.forEach(pP =>{
-        if(!closestPage || pP.dis < closestPage.dis){
-            closestPage = pP;
-        }
-    });
-    console.log("Closet match:",closestPage);
+    if(loc.pathname == "key"){
+        closestPage = {"dis":0,"path":"/pgp"}
+        skipCal = true;
+    }
+
+    if(!skipCal){
+        let possiblePages = [];
+        possibleRoutes.forEach(r => {
+            possiblePages.push({"dis": levenshteinDistance(r, loc.pathname), "path": r});
+        });
+        console.log(possiblePages);
+        possiblePages.forEach(pP =>{
+            if(!closestPage || pP.dis < closestPage.dis){
+                closestPage = pP;
+            }
+        });
+        console.log("Closet match:",closestPage);
+    }
     return(
         <>
             <div className="JetBrainMono PageNotFound">
