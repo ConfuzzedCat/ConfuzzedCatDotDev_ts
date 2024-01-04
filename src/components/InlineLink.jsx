@@ -7,7 +7,7 @@ function InlineLink({path, text}) {
     }
     return (
         <>
-            <a className="RoutesLinks" href={path}>{text}</a>
+            <a className="RoutesLinks JetBrainsMonoBold" href={path}>{text}</a>
         </>
     );
 }

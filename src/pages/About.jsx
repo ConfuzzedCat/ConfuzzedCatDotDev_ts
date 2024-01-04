@@ -43,7 +43,7 @@ function About() {
         InteliJ 2021/2023    
     `;
     return(
-        <div className="JetBrainMono TextContent">
+        <div className="TextContent">
         <h2 className="TextCenter">Hello, I am ConfuzzedCat.</h2>
         <pre>{about}</pre>
         </div>

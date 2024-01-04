@@ -1,8 +1,8 @@
 function StreamingStuff() {
     // TODO Finish this page
     return (
-        <div>
-            
+        <div className="TextCenter TextContent">
+            <p>Still under constructing</p>
         </div>
     );
 }

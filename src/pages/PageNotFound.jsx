@@ -46,7 +46,7 @@ function PageNotFound({possibleRoutes}) {
     }
     return(
         <>
-            <div className="JetBrainMono PageNotFound">
+            <div className="PageNotFound">
                 <h1 className="PageNotFoundText">404 - Page Not Found.</h1>
                 <div className="TextContent">
                     <p>You tried to access {"{" + loc.pathname +"}"}</p>

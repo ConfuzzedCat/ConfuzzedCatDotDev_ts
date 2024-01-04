@@ -8,7 +8,7 @@ function NewLineLink({path, text}) {
     
     return (
         <div>
-            <a className="RoutesLinks" href={path}>{text}</a>
+            <a className="RoutesLinks JetBrainsMonoBold" href={path}>{text}</a>
         </div>
     );
 }

@@ -20,9 +20,17 @@
   font-family: "JetBrainsMono";
   src: local("JetBrainsMono"), url(.\assets\fonts\JetBrainsMonoNerdFont-Regular.ttf) format("truetype");
 }
+@font-face {
+  font-family: "JetBrainsMono Bold";
+  src: local("JetBrainsMono Bold"), url(.\assets\fonts\JetBrainsMonoNerdFont-Bold.ttf) format("truetype");
+}
 
-.JetBrainMono{
+.JetBrainsMono{
   font-family: "JetBrainsMono";
+}
+
+.JetBrainsMonoBold{
+  font-family: "JetBrainsMono Bold";
 }
 
 .TextContent{

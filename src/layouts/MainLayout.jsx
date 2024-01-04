@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 
 function MainLayout() {
     return (
-        <div className="MainLayout">
+        <div className="MainLayout JetBrainsMono">
             <TitleAsciiArt/>
             <Outlet/>
             <Footer/>

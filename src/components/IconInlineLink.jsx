@@ -11,7 +11,7 @@ function IconInlineLink({path, text, icon}) {
     
     return (
         <>
-            <a className="RoutesLinks OneCharSpacer" href={path}> {icon} {text}</a>
+            <a className="RoutesLinks OneCharSpacer JetBrainsMonoBold" href={path}> {icon} {text}</a>
         </>
     );
 }

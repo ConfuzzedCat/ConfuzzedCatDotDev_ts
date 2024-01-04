@@ -10,7 +10,7 @@ function IconNewLineLink({path, text, icon}) {
     }
     return (
         <div>
-            <a className="RoutesLinks OneCharSpacer" href={path}> {icon} {text}</a>
+            <a className="RoutesLinks OneCharSpacer JetBrainsMonoBold" href={path}> {icon} {text}</a>
         </div>
     );
 }

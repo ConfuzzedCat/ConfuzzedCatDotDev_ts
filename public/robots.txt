@@ -50,3 +50,6 @@ Disallow: /
 
 User-agent: omgili
 Disallow: /
+
+User-agent: Bytespider
+Disallow: /
