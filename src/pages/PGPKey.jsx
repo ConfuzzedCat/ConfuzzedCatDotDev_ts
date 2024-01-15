@@ -27,7 +27,7 @@ const ClickHandler = () =>{
 }
     return(
         <div className="FullWidth CenterChildren">
-            <pre onClick={ClickHandler}>
+            <pre className="RoutesLinks" onClick={ClickHandler}>
                 {key}
             </pre>
         </div>

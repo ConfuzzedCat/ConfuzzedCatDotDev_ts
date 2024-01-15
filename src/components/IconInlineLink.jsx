@@ -1,17 +1,15 @@
-function IconInlineLink({path, text, icon}) {
-    if(!path){
-        path = "/"
-    }
-    if(!text){
-        text = "MissingText";
-    }
+import InlineLink from "./InlineLink";
+import '../App.css'
+
+
+function IconInlineLink({path, text, icon, newTab}) {
     if(!icon){
         icon = "\udb84\udc36";
     }
     
     return (
         <>
-            <a className="RoutesLinks OneCharSpacer JetBrainsMonoBold" href={path}> {icon} {text}</a>
+            <InlineLink path={path} text={`${icon} ${text}`} newTab={newTab} styleClass={"OneCharSpacer"}/>
         </>
     );
 }

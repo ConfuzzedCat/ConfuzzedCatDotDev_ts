@@ -1,18 +1,16 @@
 import IconInlineLink from "./IconInlineLink";
+import '../App.css'
 
 function Footer() {
     let year = new Date().getFullYear();
     return(
         <div className="Footer FullWidth TextCenter">
-            <IconInlineLink path="https://github.com/ConfuzzedCat" text="Github" icon={"\udb80\udea4"}/>
-            <IconInlineLink path="https://twitch.tv/ConfuzzedCat" text="Twitch" icon={"\udb81\udd43"}/>
-            <IconInlineLink path="https://twitter.com/ConfuzzedCat" text={"\uD835\uDD4F/Twitter"} icon={"\udb81\udd44"}/>
-            <IconInlineLink path="https://bsky.app/profile/confuzzedcat.dk" text="Bluesky" icon={"\ue28e"}/>
-            <IconInlineLink path="https://myanimelist.net/profile/ConfuzzedCat" text="MAL" icon={"\uf02d"}/>
-            {
-                //<IconInlineLink path="/pgp" text="PGP" icon={"\uf43d"}/>
-            }
-            
+            <IconInlineLink className="OneCharSpacer" path="https://github.com/ConfuzzedCat" text="Github" icon={"\udb80\udea4"} newTab={true}/>
+            <IconInlineLink className="OneCharSpacer" path="https://twitch.tv/ConfuzzedCat" text="Twitch" icon={"\udb81\udd43"} newTab={true}/>
+            <IconInlineLink path="https://twitter.com/ConfuzzedCat" text={"\uD835\uDD4F/Twitter"} icon={"\udb81\udd44"} newTab={true}/>
+            <IconInlineLink path="https://bsky.app/profile/confuzzedcat.dk" text="Bluesky" icon={"\ue28e"} newTab={true}/>
+            <IconInlineLink path="https://mastodon.social/@ConfuzzedCat" text="Mastodon" icon={"\udb82\uded1"} newTab={true}/>
+            <IconInlineLink path="https://myanimelist.net/profile/ConfuzzedCat" text="MAL" icon={"\uf02d"} newTab={true}/>            
             <p>
                 ConfuzzedCat {"\udb81\udde6"} {year}
             </p>

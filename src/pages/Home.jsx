@@ -1,15 +1,16 @@
-import NewLineLink from "../components/NewLineLink";
+import IconNewLineLink from "../components/IconNewLineLink";
 function HomePage() {
     return(
         <div className="TextCenter TextContent">
             <h2>
                 Welcome
             </h2>
-            <NewLineLink className="FullWidth" path="/about" text="ABOUT"/>
+            <IconNewLineLink className="FullWidth" path="/about" text="ABOUT" icon={"\uf4ff"}/>
             {
                 //<NewLineLink className="FullWidth" path="/links" text="LINKS"/>
             }
-            <NewLineLink className="FullWidth" path="/contact" text="CONTACT"/>
+            <IconNewLineLink className="FullWidth" path="/contact" text="CONTACT" icon={"\udb81\udecb"}/>
+            <IconNewLineLink className="FullWidth" path="/pgp" text="PGP" icon={"\udb85\udd74"}/>
         </div>
     );    
 }

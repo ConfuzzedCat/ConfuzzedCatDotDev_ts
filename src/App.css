@@ -5,10 +5,11 @@
   */
 }
 .Title{
-  margin-bottom: 10em;
-  font-size: 1vw;
-  line-height: 1;
-  text-align: left;
+  margin-bottom: 6em;
+  font-size: 1.1vw;
+  line-height: .9;
+  text-align: center;
+  letter-spacing: -.15em;
   max-width: 10000px;
 }
 
