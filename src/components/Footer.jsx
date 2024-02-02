@@ -1,4 +1,5 @@
 import IconInlineLink from "./IconInlineLink";
+import InlineLink from "./InlineLink";
 import '../App.css'
 
 function Footer() {
@@ -12,7 +13,7 @@ function Footer() {
             <IconInlineLink path="https://mastodon.social/@ConfuzzedCat" text="Mastodon" icon={"\udb82\uded1"} newTab={true}/>
             <IconInlineLink path="https://myanimelist.net/profile/ConfuzzedCat" text="MAL" icon={"\uf02d"} newTab={true}/>            
             <p>
-                ConfuzzedCat {"\udb81\udde6"} {year}
+                <InlineLink path="https://confuzzedcat.dk/LICENSE.txt" text="ConfuzzedCat \udb81\udde6 {year}" newTab={true}/>                
             </p>
         </div>
     );
