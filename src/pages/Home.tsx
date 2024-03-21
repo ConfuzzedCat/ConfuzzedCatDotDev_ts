@@ -7,9 +7,9 @@ function HomePage() {
             <h2>
                 Welcome
             </h2>
-            <IconNewLineLink classes="FullWidth" path="/about" text="ABOUT" icon={"\uf4ff"}/>
-            <IconNewLineLink classes="FullWidth" path="/contact" text="CONTACT" icon={"\udb81\udecb"}/>
-            <IconNewLineLink classes="FullWidth" path="/pgp" text="PGP" icon={"\udb85\udd74"}/>
+            <IconNewLineLink path="/about" text="ABOUT" icon={"\uf4ff"}/>
+            <IconNewLineLink path="/contact" text="CONTACT" icon={"\udb81\udecb"}/>
+            <IconNewLineLink path="/pgp" text="PGP" icon={"\udb85\udd74"}/>
         </div>
     );    
 }
