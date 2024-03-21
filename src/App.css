@@ -19,11 +19,11 @@
 
 @font-face {
   font-family: "JetBrainsMono";
-  src: local("JetBrainsMono"), url(/fonts/JetBrainsMonoNerdFont-Bold.ttf) format("truetype");
+  src: local("JetBrainsMono"), url(https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/Ligatures/Regular/JetBrainsMonoNerdFont-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "JetBrainsMono Bold";
-  src: local("JetBrainsMono Bold"), url(/fonts/JetBrainsMonoNerdFont-Bold.ttf) format("truetype");
+  src: local("JetBrainsMono Bold"), url(https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/Ligatures/Bold/JetBrainsMonoNerdFont-Bold.ttf) format("truetype");
 }
 
 .JetBrainsMono{
@@ -42,15 +42,15 @@
   background-image: 
     linear-gradient(
       to right, 
-        #ffffff, 
-        #ffffff, 
-        #ffffff, 
-        #ffffff, 
-        #00fafa, 
-        #fa8edd, 
-        #ffffff, 
-        #ffffff, 
-        #ffffff, 
+        #ffffff,
+        #ffffff,
+        #ffffff,
+        #ffffff,
+        #00fafa,
+        #fa8edd,
+        #ffffff,
+        #ffffff,
+        #ffffff,
         #ffffff);
   background-clip: text;
   -webkit-background-clip: text;
