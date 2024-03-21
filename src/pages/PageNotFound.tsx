@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
 import { useLocation } from "react-router-dom";
 import InlineLink from "../components/InlineLink";
+import { FC } from 'react';
 
-function PageNotFound({possibleRoutes}) {
+
+const PageNotFound: FC<{possibleRoutes: string[]}> = ({possibleRoutes}) => {
     const loc = useLocation();
-    const levenshteinDistance = (s, t) => {
+    const levenshteinDistance = (s : string, t : string) => {
         // https://www.30secondsofcode.org/js/s/levenshtein-distance/
         if (!s.length) return t.length;
         if (!t.length) return s.length;
@@ -25,24 +27,24 @@ function PageNotFound({possibleRoutes}) {
         return arr[t.length][s.length];
     };
     let skipCal = false;
-    let closestPage;
+    let closestPage : {dis: number, path: string} = {dis: 10000, path: ""};
     if(loc.pathname == "key"){
         closestPage = {"dis":0,"path":"/pgp"}
         skipCal = true;
     }
 
     if(!skipCal){
-        let possiblePages = [];
+        let possiblePages : {dis: number, path: string}[] = [];
         possibleRoutes.forEach(r => {
             possiblePages.push({"dis": levenshteinDistance(r, loc.pathname), "path": r});
         });
         console.log(possiblePages);
         possiblePages.forEach(pP =>{
-            if(!closestPage || pP.dis < closestPage.dis){
+            if(pP.dis < closestPage.dis){
                 closestPage = pP;
             }
         });
-        console.log("Closet match:",closestPage);
+        console.log("Closet match:", closestPage);
     }
     return(
         <>
