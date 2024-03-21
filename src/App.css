@@ -16,23 +16,22 @@
 .TextCenter{
   text-align: center;
 }
-/*
+
 @font-face {
   font-family: "JetBrainsMono";
-  src: local("JetBrainsMono"), url(https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/Ligatures/Regular/JetBrainsMonoNerdFont-Regular.ttf) format("truetype");
+  src: local("JetBrainsMono"), url(https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts/patched-fonts/JetBrainsMono/Ligatures/Regular/JetBrainsMonoNerdFont-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "JetBrainsMono Bold";
-  src: local("JetBrainsMono Bold"), url(https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/JetBrainsMono/Ligatures/Bold/JetBrainsMonoNerdFont-Bold.ttf) format("truetype");
+  src: local("JetBrainsMono Bold"), url(https://cdn.jsdelivr.net/gh/ryanoasis/nerd-fonts/patched-fonts/JetBrainsMono/Ligatures/Bold/JetBrainsMonoNerdFont-Bold.ttf) format("truetype");
 }
-*/
+
 .JetBrainsMono{
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "JetBrainsMono";
 }
 
 .JetBrainsMonoBold{
-  font-family: "JetBrainsMono Nerd Font";
-  font-weight: bold;
+  font-family: "JetBrainsMono Bold";
 }
 
 .TextContent{
