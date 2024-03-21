@@ -13,7 +13,7 @@ const IconNewLineLink: FC<IconNewLineLinkProps> = ({path, text, icon, classes, n
     if(!icon){
         icon = "\udb84\udc36";
     }
-    classes = "OneCharSpacer" + classes;
+    classes = "OneCharSpacer " + classes;
     return (
         <div>
             <NewLineLink classes={classes} path={path} text={` ${icon} ${text}`} newTab={newTab}/>

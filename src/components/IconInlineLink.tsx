@@ -13,7 +13,7 @@ const IconInlineLink: FC<IconInlineLinkProps> = ({path, text, icon, classes, new
     if(!icon){
         icon = "\udb84\udc36";
     }
-    classes = "OneCharSpacer" + classes;
+    classes = "OneCharSpacer " + classes;
     return (
         <>
             <InlineLink classes={classes} path={path} text={`${icon} ${text}`} newTab={newTab}/>
