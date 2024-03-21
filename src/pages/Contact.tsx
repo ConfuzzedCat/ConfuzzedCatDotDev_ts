@@ -11,7 +11,7 @@ function Contact() {
             <p>Otherwise, you can write a dm to me on any of these platforms.</p>
             <IconNewLineLink path="https://twitch.tv/ConfuzzedCat" text="Twitch" icon={"\udb81\udd43"} newTab={true}/>
             <IconInlineLink path="https://twitter.com/ConfuzzedCat" text={"\uD835\uDD4F/Twitter"} icon={"\udb81\udd44"} newTab={true}/>
-            <IconNewLineLink path="https://bsky.app/profile/confuzzedcat.dk" text="Bluesky" icon={"\ue28e"} newTab={true}/>
+            <IconNewLineLink path="https://bsky.app/profile/confuzzedcat.dev" text="Bluesky" icon={"\ue28e"} newTab={true}/>
             <IconNewLineLink path="https://mastodon.social/@ConfuzzedCat" text="Mastodon" icon={"\udb82\uded1"} newTab={true}/>
             <p>Or lastly, you can write me a mail on this email.</p>
             <IconNewLineLink path="mailto:confuzzedcat@gmail.com" text="confuzzedcat@gmail.com" icon={"\uf42f"}/>
