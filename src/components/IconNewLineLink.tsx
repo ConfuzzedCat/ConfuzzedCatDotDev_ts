@@ -13,6 +13,15 @@ const IconNewLineLink: FC<IconNewLineLinkProps> = ({path, text, icon, classes, n
     if(!icon){
         icon = "\udb84\udc36";
     }
+    if(!path){
+        path = "/";
+    }
+    if(!text){
+        text = "MissingText";
+    }
+    if(!classes){
+        classes = "";
+    }
     classes = "OneCharSpacer " + classes;
     return (
         <div>

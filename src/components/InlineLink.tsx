@@ -14,6 +14,13 @@ const InlineLink: FC<InlineLinkProps> = ({path, text, newTab, classes}) => {
     if(!text){
         text = "MissingText";
     }
+    if(!newTab){
+        newTab = false;
+    }
+    if(!classes){
+        classes = "";
+    }
+
     classes = "RoutesLinks JetBrainsMonoBold " + classes;
     return (
         <>

@@ -14,6 +14,9 @@ const NewLineLink: FC<NewLineLinkProps> = ({path, text, classes, newTab}) => {
     if(!text){
         text = "MissingText";
     }
+    if(!classes){
+        classes = "";
+    }
     classes = "RoutesLinks JetBrainsMonoBold " + classes;
 
     return (
