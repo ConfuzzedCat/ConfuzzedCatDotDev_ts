@@ -13,4 +13,4 @@ FROM nginx:1.25
 COPY --from=build-stage /app/dist/ /usr/share/nginx/html
 
 # Copy the default nginx.conf to get the try-files directive to work with react router
-COPY ./nginx.conf /etc/nginx/conf.d/default.conf
+COPY ./docker.nginx.conf /etc/nginx/conf.d/default.conf
