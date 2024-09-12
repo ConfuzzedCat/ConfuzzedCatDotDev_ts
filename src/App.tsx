@@ -10,6 +10,7 @@ import Contact from './pages/Contact';
 
 import "vanilla-cookieconsent/dist/cookieconsent.css";
 import * as CookieConsent from "vanilla-cookieconsent";
+import StreamingStuff from './pages/StreamingStuff';
 //import TestPlayground from './pages/TestPlaygroud';
 
 function App() {
@@ -61,7 +62,7 @@ function App() {
   }, [])
 
 
-  const possibleRoutes = ["/about", "/pgp", "/contact"];
+  const possibleRoutes = ["/about", "/pgp", "/contact", "/streamingstuff"];
   //<Route path="TestingGround" element={<TestPlayground/>}/>
   const routes = createBrowserRouter(
     createRoutesFromElements(
@@ -69,6 +70,7 @@ function App() {
         <Route path="/" element={<MainLayout/>}>
           <Route index element={<HomePage/>}/>
           <Route path="about" element={<About/>}/>
+          <Route path="streamingstuff" element={<StreamingStuff/>}/>
           <Route path="contact" element={<Contact/>}/>
           <Route path="pgp" element={<PGPKey/>}/>
           <Route path="*" element={<PageNotFound possibleRoutes={possibleRoutes}/>} /> 

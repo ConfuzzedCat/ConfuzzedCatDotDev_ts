@@ -144,6 +144,25 @@ a:hover:after {
   border-radius: .5em;
   max-width: auto;
   padding: .5em;
-  margin-bottom: -.1em;
-  background-color: red;
+  margin-bottom: 0em;
+  margin-top: .6em;
+  animation-name: IsLiveFade;
+  animation-duration: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  --Live-Color: rgba(248, 3, 56, 1);
+  --Live-Color-Fade: rgba(248, 3, 56, 0.8);
+}
+
+
+
+@keyframes IsLiveFade {
+  0%   {
+    background-color: var(--Live-Color);
+    box-shadow: 0px 0px 15px var(--Live-Color);
+  }
+  100%   {
+    background-color: var(--Live-Color-Fade);
+    box-shadow: 0px 0px 5px var(--Live-Color-Fade);
+  }
 }
