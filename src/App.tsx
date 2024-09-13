@@ -17,6 +17,11 @@ function App() {
 
   useEffect(() => {
     CookieConsent.run({
+      onFirstConsent: ({cookie}) => {
+        // Find and execute this function: setupUpCookies();
+        // Stupid fix:
+        window.location.reload();
+      },
       categories: {
         //necessary: {},
         analytics: {
