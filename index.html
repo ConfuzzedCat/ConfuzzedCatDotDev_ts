@@ -10,23 +10,45 @@
 
   <!-- Matomo -->
   <script id="TRACKING">
-    var _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-    _paq.push(["setCookieDomain", "*.confuzzedcat.dev"]);
-    _paq.push(["setDomains", ["*.confuzzedcat.dev"]]);
-    _paq.push(["disableCampaignParameters"]);
-    _paq.push(["setDoNotTrack", true]);
-    _paq.push(["disableCookies"]);
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function () {
-      var u = "https://analytics.markuso.ooo/";
-      _paq.push(['setTrackerUrl', u + 'matomo.php']);
-      _paq.push(['setSiteId', '2']);
-      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-      g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
-    })();
+    function getCookie(name) {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+    
+    let encoded_cc_cookie = getCookie("cc_cookie");
+    let cc_cookie;
+    try {
+      cc_cookie = decodeURI(encoded_cc_cookie);
+      console.log(cc_cookie);
+      // Expected output: "https://mozilla.org/?x=шеллы"
+    } catch (e) {
+      // Catches a malformed URI
+      console.error(e);
+    }
+    if(!(!cc_cookie || !cc_cookie.includes('["analytics"]'))){      
+      console.log("Tracking enabled.");
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+      _paq.push(["setCookieDomain", "*.confuzzedcat.dev"]);
+      _paq.push(["setDomains", ["*.confuzzedcat.dev"]]);
+      _paq.push(["disableCampaignParameters"]);
+      _paq.push(["setDoNotTrack", true]);
+      _paq.push(["disableCookies"]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+        var u = "https://analytics.markuso.ooo/";
+        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+        _paq.push(['setSiteId', '2']);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+      })();
+    }
+    else{
+      console.log("Tracking Disabled.");
+    }
   </script>
   <!-- End Matomo Code -->
 </head>
