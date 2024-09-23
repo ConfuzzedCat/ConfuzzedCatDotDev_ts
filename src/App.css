@@ -6,11 +6,11 @@
 }
 .Title{
   margin-bottom: 6em;
-  font-size: 1.1vw;
+  font-size: 1vw;
   line-height: .9;
   text-align: center;
-  letter-spacing: -.15em;
-  max-width: 10000px;
+  letter-spacing: -.1em;
+  /* max-width: 10000px; */
 }
 
 .TextCenter{
@@ -59,7 +59,9 @@
   background-position: 0%;
 }
 .RoutesLinks:hover{
-  animation: animatedgradienttext 0.5s ease-in-out;
+  animation: animatedgradienttext .8s ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
   cursor: pointer;
 }
 

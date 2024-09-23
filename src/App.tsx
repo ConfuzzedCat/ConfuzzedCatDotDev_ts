@@ -21,6 +21,7 @@ function App() {
         // Find and execute this function: setupUpCookies();
         // Stupid fix:
         window.location.reload();
+        console.log(cookie.consentTimestamp);        
       },
       categories: {
         //necessary: {},
