@@ -3,15 +3,12 @@ import InlineLink from "./InlineLink";
 
 const URL = "https://decapi.me/twitch/uptime";
 
-//         Input T ↴   is thread through to ↴
 async function api(path: string): Promise<String> {
   const response = await fetch(`${URL}/${path}`);
 
   if (!response.ok) {
     throw new Error(response.statusText);
   }
-
-  //    And can also be used here ↴
   return await response.text();
 }
 
