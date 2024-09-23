@@ -102,7 +102,7 @@ function TitleAsciiArt() {
   let titleFinal = titleSplit.join('\n');
 
   return(
-    <div className="Title RoutesLinks" onClick={ClickHandler}>
+    <div aria-hidden="true" className="Title RoutesLinks" onClick={ClickHandler}>
       <pre>
       {titleFinal}
       </pre>        
