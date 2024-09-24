@@ -1,4 +1,6 @@
 import { FC } from 'react';
+import { validURL } from '../utils/url';
+import { useNavigate } from 'react-router-dom';
 
 interface NewLineLinkProps {
     path?: string;
@@ -8,6 +10,7 @@ interface NewLineLinkProps {
 }
 
 const NewLineLink: FC<NewLineLinkProps> = ({path, text, classes, newTab}) => {
+    const navigate = useNavigate();
     if(!path){
         path = "/"
     }
@@ -17,11 +20,16 @@ const NewLineLink: FC<NewLineLinkProps> = ({path, text, classes, newTab}) => {
     if(!classes){
         classes = "";
     }
+    let isUrl = validURL(path);
+    const ClickHandler = () => {
+      navigate(path);
+    };
     classes = "RoutesLinks JetBrainsMonoBold " + classes;
 
     return (
         <div>
-            <a className={classes} href={path} {...(newTab && {target:"_blank"})}>{text}</a>
+            {isUrl && <a className={classes} href={path} {...(newTab && {target:"_blank"})}>{text}</a>}
+            {!isUrl && <a className={classes} onClick={ClickHandler} {...(newTab && {target:"_blank"})}>{text}</a>}
         </div>
     );
 }

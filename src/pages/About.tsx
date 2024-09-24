@@ -6,46 +6,46 @@ function About() {
     };
     const bday = new Date("2002/02/06");
     let age = calculateAge(bday);
-
     const about = 
     `
-    I am ${age} years old (06/02/02),
-    from the small country Denmark.
-    Also sorry for an spelling mistake, I am dyslexic. 
-    I am currently studying Computer Science.
-    Pronounces: (He/Him/Any)
+I am ${age} years old (06/02/02),
+from the small country Denmark.
+Also sorry for any spelling mistake, I am dyslexic. 
+I am currently studying Computer Science.
+Pronounces: (He/Him/Any)
 
-    Hobbies:
-        coding
-        reverse "engineering"(I like to poke and see how things under the hood.)
-        VR
-        Gaming
-        Modding
-        Manga and anime
-    
-    Spoken Languages:
-        Danish (Native)
-        English (Fluently)
-        Other nordic languages (Might get the context)
-        Japanese (Learning, not able to speak, nor read much)
+Hobbies:
+    coding
+    reverse "engineering"(I like to poke and see how things under the hood.)
+    VR
+    Gaming
+    Modding
+    Manga and anime
 
-    Computer Languages:
-        C# (Around 4 years)
-        Java (Around 1-2 years)
-        JavaScript (React, Around half an year)
-        SQL (Around half an year)
-        C++ (Learning)
-        GLSL (Learning)
+Spoken Languages:
+    Danish (Native)
+    English (Fluently)
+    Other nordic languages (Might get the context)
+    Japanese (Learning, not able to speak, nor read much)
 
-    Tools:
-        Visual Studio 2019/2022
-        Visual Studio Code
-        InteliJ 2021/2023    
+Computer Languages (Ranked by personal familiarity and usage, from most to least):
+    C#
+    Java
+    JavaScript
+    SQL
+    C++
+    GLSL
+
+Tools:
+    Visual Studio 2019/2022
+    InteliJ
+    Visual Studio Code
+    Rider
     `;
     return(
-        <div className="TextContent">
-        <h2 className="TextCenter">Hello, I am ConfuzzedCat.</h2>
-        <pre>{about}</pre>
+        <div className="">
+            <h2 className="TextCenter">Hello, I am ConfuzzedCat.</h2>
+            <pre>{about}</pre>
         </div>
     );
 }

@@ -1,11 +1,11 @@
 import { Outlet } from 'react-router-dom';
-import TitleAsciiArt from '../components/TitleAsciiArt'
 import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 function MainLayout() {
     return (
         <div className="MainLayout JetBrainsMono">
-            <TitleAsciiArt/>
+            <Header/>
             <Outlet/>
             <Footer/>
         </div>
