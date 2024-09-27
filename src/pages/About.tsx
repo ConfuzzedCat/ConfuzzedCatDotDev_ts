@@ -32,8 +32,8 @@ Computer Languages (Ranked by personal familiarity and usage, from most to least
     C#
     Java
     JavaScript
-    SQL
     C++
+    SQL
     GLSL
 
 Tools:
