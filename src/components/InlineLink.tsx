@@ -23,7 +23,7 @@ const InlineLink: FC<InlineLinkProps> = ({path, text, newTab, classes}) => {
     if(!classes){
         classes = "";
     }
-    let isUrl = validURL(path);
+    let isUrl = validURL(path) || newTab;
     const ClickHandler = () => {
       navigate(path);
     };

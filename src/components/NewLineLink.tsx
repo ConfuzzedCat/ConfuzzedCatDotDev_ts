@@ -20,7 +20,7 @@ const NewLineLink: FC<NewLineLinkProps> = ({path, text, classes, newTab}) => {
     if(!classes){
         classes = "";
     }
-    let isUrl = validURL(path);
+    let isUrl = validURL(path) || newTab;
     const ClickHandler = () => {
       navigate(path);
     };
