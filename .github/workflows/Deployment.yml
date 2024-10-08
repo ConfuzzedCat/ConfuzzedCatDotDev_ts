@@ -29,4 +29,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/confuzzedcatdotdev:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/confuzzedcatdotdev_ts:latest
